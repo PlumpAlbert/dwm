@@ -377,6 +377,8 @@ applyrules(Client *c)
 				c->mon = m;
 		}
 	}
+  if (strstr(class, "stalonetray"))
+    c->issticky = 1;
 	if (ch.res_class)
 		XFree(ch.res_class);
 	if (ch.res_name)
