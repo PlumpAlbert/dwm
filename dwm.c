@@ -912,7 +912,7 @@ drawbar(Monitor *m)
     }
 		drw_text(drw, x, 0, tw, bh, 0, stext, 0);
     if (showkb) {
-      drw_text(drw, x+tw, 0, ww, bh, 0, xkb_layouts[xkbGlobal.group], 0);
+      drw_text(drw, x+tw+lrpad/2, 0, ww, bh, 0, xkb_layouts[xkbGlobal.group], 0);
     }
 	}
 
