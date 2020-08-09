@@ -43,6 +43,8 @@ install: all
 	mkdir -p ${DESTDIR}${PREFIX}/share/dwm
 	cp -f larbs.mom ${DESTDIR}${PREFIX}/share/dwm
 	chmod 644 ${DESTDIR}${PREFIX}/share/dwm/larbs.mom
+	cp -f launch_dwm ${DESTDIR}${PREFIX}/bin
+	chmod 755 ${DESTDIR}${PREFIX}/bin/launch_dwm
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
