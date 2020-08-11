@@ -237,7 +237,7 @@ static Key keys[] = {
 	{ 0, XF86XK_WWW,		spawn,		SHCMD("$BROWSER") },
 	{ 0, XF86XK_DOS,		spawn,		SHCMD("st") },
 	{ 0, XF86XK_TaskPane,		spawn,		SHCMD("st -e htop") },
-	{ 0, XF86XK_MyComputer,		spawn,		SHCMD("st -e lf /") },
+	{ 0, XF86XK_MyComputer,		spawn,		SHCMD("pcmanfm-qt") },
 	/* { 0, XF86XK_Battery,		spawn,		SHCMD("") }, */
 	{ 0, XF86XK_Launch1,		spawn,		SHCMD("xset dpms force off") },
 	{ 0, XF86XK_TouchpadToggle,	spawn,		SHCMD("(synclient | grep 'TouchpadOff.*1' && synclient TouchpadOff=0) || synclient TouchpadOff=1") },
