@@ -49,6 +49,8 @@ install: all
 	chmod 644 ${DESTDIR}${PREFIX}/share/dwm/larbs.mom
 	cp -f launch_dwm ${DESTDIR}${PREFIX}/bin
 	chmod 755 ${DESTDIR}${PREFIX}/bin/launch_dwm
+	[ -d /usr/share/xsessions ] || mkdir /usr/share/xsessions
+	cp -f dwm.desktop /usr/share/xsessions
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
