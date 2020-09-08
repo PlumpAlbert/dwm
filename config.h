@@ -19,7 +19,7 @@ static const char *altbarcmd        = "$HOME/bar.sh"; /* Alternate bar launch co
 
 
 static const char *fonts[]          = {
-  "Space Mono:pixelsize=10",
+  "JetBrainsMono Nerd Font:pixelsize=10",
   "Noto Color Emoji:pixelpixelsize=10:antialias=true:autohint=true",
   "FontAwesome:pixelpixelsize=10:antialias=true:autohint=true",
   "Font Awesome 5 Free:pixelpixelsize=10:antialias=true:autohint=true",
