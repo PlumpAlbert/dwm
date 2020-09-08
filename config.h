@@ -21,11 +21,11 @@ static const char *altbarcmd        = "$HOME/bar.sh"; /* Alternate bar launch co
 static const char *fonts[]          = {
   "Space Mono:pixelsize=10",
   "monospace:pixelsize=10",
-  "Twitter Color Emoji:pixelpixelsize=10:antialias=true:autohint=true",
-  "EmojiOne:pixelpixelsize=10:antialias=true:autohint=true",
+  "Noto Color Emoji:pixelpixelsize=10:antialias=true:autohint=true",
   "FontAwesome:pixelpixelsize=10:antialias=true:autohint=true",
   "Font Awesome 5 Free:pixelpixelsize=10:antialias=true:autohint=true",
   "Font Awesome 5 Brands:pixelpixelsize=10:antialias=true:autohint=true",
+  "monospace:pixelpixelsize=10:antialias=true:autohint=true",
 };
 static char dmenufont[]             = "Space Mono:pixelsize=12";
 
@@ -79,12 +79,7 @@ static const Rule rules[] = {
 static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
-/* xkb frontend */
-static const int showkb = 0; // 0 means no xkb layout text
-static const char *xkb_layouts [] = {
-  "🇺🇸",
-  "🇷🇺"
-};
+
 #define FORCE_VSPLIT 1  /* nrowgrid layout: force two clients to always split vertically */
 #include "vanitygaps.c"
 static const Layout layouts[] = {
