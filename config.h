@@ -15,7 +15,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int usealtbar          = 1;        /* 1 means use non-dwm status bar */
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *alttrayname      = "polybar";    /* Polybar tray instance name */
-static const char *altbarcmd        = "$HOME/bar.sh"; /* Alternate bar launch command */
+static const char *altbarcmd        = "$HOME/.config/polybar/start.sh"; /* Alternate bar launch command */
 
 
 static const char *fonts[]          = {
@@ -26,7 +26,7 @@ static const char *fonts[]          = {
   "Font Awesome 5 Brands:pixelpixelsize=10:antialias=true:autohint=true",
   "monospace:pixelpixelsize=10:antialias=true:autohint=true",
 };
-static char dmenufont[]             = "Space Mono:pixelsize=12";
+static char dmenufont[]             = "JetBrainsMono Nerd Font:pixelsize=12";
 
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
