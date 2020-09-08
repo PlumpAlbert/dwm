@@ -2,24 +2,33 @@
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
+static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
+
 static const unsigned int gappih    = 10;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 10;       /* vert inner gap between windows */
 static const unsigned int gappoh    = 10;       /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov    = 10;       /* vert outer gap between windows and screen edge */
-static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int smartgaps          = 1;        /* 1 means no outer gap when there is only one window */
+
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+static const int usealtbar          = 1;        /* 1 means use non-dwm status bar */
+static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
+static const char *alttrayname      = "polybar";    /* Polybar tray instance name */
+static const char *altbarcmd        = "$HOME/bar.sh"; /* Alternate bar launch command */
+
+
 static const char *fonts[]          = {
-  "Cartograph Mono CF:size=9",
-  "monospace:size=9",
-  "Twitter Color Emoji:pixelsize=10:antialias=true:autohint=true",
-  "EmojiOne:pixelsize=10:antialias=true:autohint=true",
-  "FontAwesome:pixelsize=10:antialias=true:autohint=true",
-  "Font Awesome 5 Free:pixelsize=10:antialias=true:autohint=true",
-  "Font Awesome 5 Brands:pixelsize=10:antialias=true:autohint=true",
+  "Space Mono:pixelsize=10",
+  "monospace:pixelsize=10",
+  "Twitter Color Emoji:pixelpixelsize=10:antialias=true:autohint=true",
+  "EmojiOne:pixelpixelsize=10:antialias=true:autohint=true",
+  "FontAwesome:pixelpixelsize=10:antialias=true:autohint=true",
+  "Font Awesome 5 Free:pixelpixelsize=10:antialias=true:autohint=true",
+  "Font Awesome 5 Brands:pixelpixelsize=10:antialias=true:autohint=true",
 };
-static char dmenufont[]             = "Cartograph Mono CF:size=9";
+static char dmenufont[]             = "Space Mono:pixelsize=12";
+
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#bbbbbb";
@@ -37,7 +46,7 @@ typedef struct {
 	const void *cmd;
 } Sp;
 const char *spcmd1[] = {"st", "-n", "spterm", "-g", "120x34", NULL };
-const char *spcmd2[] = {"st", "-n", "spcalc", "-f", "monospace:size=16", "-g", "50x20", "-e", "bc", "-lq", NULL };
+const char *spcmd2[] = {"st", "-n", "spcalc", "-f", "monospace:pixelsize=10", "-g", "50x20", "-e", "bc", "-lq", NULL };
 static Sp scratchpads[] = {
 	/* name          cmd  */
 	{"spterm",      spcmd1},
@@ -71,7 +80,7 @@ static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] *
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 /* xkb frontend */
-static const int showkb = 1; // 0 means no xkb layout text
+static const int showkb = 0; // 0 means no xkb layout text
 static const char *xkb_layouts [] = {
   "🇺🇸",
   "🇷🇺"
